@@ -1,0 +1,68 @@
+/* GLOBAL STYLING */
+html, body {
+  margin: 0;
+  height: 100%;
+  background-color: rgb(176, 197, 255);
+}
+
+/* HEADER STYLINGS */
+#header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  border: 2px solid black;
+  margin: 30px 70px 0px 70px;
+  background-color: rgb(198, 146, 254);
+}
+
+h1 {
+  font-size: 40px;
+  letter-spacing: 5px;
+}
+
+input[type='button'] {
+  background-color: rgb(255, 255, 144);
+  margin-top: -30px;
+  font-size: 20px;
+  height: 20%;
+  width: 20%;
+}
+
+
+/* TABLE STYLINGS */
+table {
+  position: relative;
+  padding: 20px 70px;
+  width: 100%;
+  height: 80%;
+  text-align: center;
+}
+
+th {
+  border: 2px solid black;
+  width: 20%;
+  height: 16.66%;
+  background-color: rgb(255, 123, 211);
+}
+
+td {
+  border: 2px solid black;
+  width: 20%;
+  height: 16.66%;
+  font-size: 300%;
+}
+
+tr{
+  border: 2px solid black;
+  width: 20%;
+  height: 16.66%;
+  background-color: rgb(181, 255, 237);
+}
+
+
+/* STYLINGS FOR CATEGORY TEXT */
+.categories {
+  text-transform: uppercase;
+}

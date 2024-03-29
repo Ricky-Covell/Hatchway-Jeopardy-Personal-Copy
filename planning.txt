@@ -1,0 +1,106 @@
+HTML
+
+    Nothing don't touch index.HTML
+    Everything added/removed should be thrrough js
+
+
+
+
+
+
+JAVASCRIPT
+
+    READ Jeopardy API Docs
+
+    USE JQUERY not native js
+
+    - Async function for getting random category from jeopardy API
+    - Async function for getting random question from jeopardy API
+
+    - When page opens, create html table 6 across and 5 down
+        - questions initially have ?
+            - when clicked display question
+                - when clicked again display answer
+
+    - Restart button that loads new categories and questions w/o refreshing page
+
+
+
+
+    NOTES:
+        -Use event delegation wisely, listen to the parent element when necessary
+
+
+
+
+CSS
+
+
+
+
+
+
+Native JS => jQuery NOTES
+
+    Document.querySelectorAll.('ul')  =>  $('ul')
+
+
+    Document.createNewElement.('ul')  =>  $('<ul>')
+
+
+    DOMContentLoaded  =>  $(document).ready(function(){})
+
+
+    addEventListener = .on("click", function(event) {});
+
+    !!! variables storing jQuery elements start with $    i.e.  const $allUl = $('ul')
+
+    
+    USE METHOD CHAINING i.e.        $("#todo-container")
+                                         .css("color", "red")
+                                         .text("look at this!")
+                                         .on("click", function(evt) { console.log("clicked!") });
+
+
+
+    METHODS:
+
+        .val()
+        .text()
+        .attr()
+        .html()
+        .css()
+        .addClass() /.removeClass() / .toggleClass()
+        .empty() /.remove()
+        .append() /.prepend()
+        .find() /  .closest() / .parent() / .next() / .prev()
+
+
+
+
+
+
+
+
+
+
+
+
+
+NOTES TRASHCAN
+
+
+    // GET CATEGORIES 
+    // await axios.get https://rithm-jeopardy.herokuapp.com/api/categories?count=100 
+        // FOR CATEGORY =>     .data[index].title
+        // FOR ID number =>     .data[index].id
+
+// GET QUESTION FROM CATEGORY 
+    // await axios.get https://rithm-jeopardy.herokuapp.com/api/category?id=3
+        // make ?id=3 a string template literal that accepts id number
+        // FOR QUESTION =>     .data.clues[index].question
+        // FOR ANSWER =>     .data.clues[index].answer
+        // FOR CATEGORY =>     .data.title
+
+        // GET REQUEST W/ PARAMS =>     const response = await axios.get("https://rithm-jeopardy.herokuapp.com/api/category?", ({params: {id: 3}}))
+
